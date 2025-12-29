@@ -56,42 +56,42 @@ let str = "text";
 let strStr = String(str);
 console.log(`${typeof str} : ${str}`); // -> string : text
 console.log(`${typeof strStr} : ${strStr}`); // -> string : text
-   
+
 let nr = 42;
 let strNr = String(nr);
 console.log(`${typeof nr} : ${nr}`); // -> number : 42
 console.log(`${typeof strNr} : ${strNr}`); // -> string : 42
-   
+
 let bl = true;
 let strBl = String(bl);
 console.log(`${typeof bl} : ${bl}`); // -> boolean : true
 console.log(`${typeof strBl} : ${strBl}`); // -> string : true
-   
+
 let bnr = 123n;
 let strBnr = String(bnr);
 console.log(`${typeof bnr} : ${bnr}`); // -> bigint : 123
 console.log(`${typeof strBnr} : ${strBnr}`); // -> string : 123
-   
+
 let un = undefined;
 let strUn = String(un);
 console.log(`${typeof un} : ${un}`); // -> undefined : undefined
 console.log(`${typeof strUn} : ${strUn}`); // -> string : undefined
-   
+
 let n = null;
 let strN = String(n);
 console.log(`${typeof n} : ${n}`); // -> object : null
 console.log(`${typeof strN} : ${strN}`); // -> string : null
 
 
-let b1 = true + 100; 
+let b1 = true + 100;
 // let b2 = true + 100n; // -> error!
-let b3 = true + "100"; 
+let b3 = true + "100";
 // let n1 = 100 + 200n; // -> error!
 let n2 = 100 + true;
 let n3 = 100 + "200";
 // let bi1 = 100n + 200;  // -> error!
 // let bi2 = 100n + true  // -> error!
-let bi3 = 100n + "200"; 
+let bi3 = 100n + "200";
 let s1 = "100" + 200;
 let s2 = "100" + 200n;
 let s3 = "100" + true;
@@ -117,20 +117,20 @@ console.log(`${s6} [${typeof s6}]`);    // -> abctrue [string]
 
 
 let books = [{
-        title: "Speaking JavaScript",
-        author: "Axel Rauschmayer",
-        pages: 460
-    },
-    {
-        title: "Programming JavaScript Applications",
-        author: "Eric Elliot",
-        pages: 254
-    },
-    {
-        title: "Understanding ECMAScript 6",
-        author: "Nicholas C. Zakas",
-        pages: 352
-    }
+    title: "Speaking JavaScript",
+    author: "Axel Rauschmayer",
+    pages: 460
+},
+{
+    title: "Programming JavaScript Applications",
+    author: "Eric Elliot",
+    pages: 254
+},
+{
+    title: "Understanding ECMAScript 6",
+    author: "Nicholas C. Zakas",
+    pages: 352
+}
 ];
 
 
@@ -158,14 +158,14 @@ let sum = books[0].pages + books[1].pages + books[2].pages;
 console.log(`pages: ${sum}`);
 
 let number = prompt("Enter a random number");
-if(number > 90 && number < 110) {
+if (number > 90 && number < 110) {
     alert("Bingo!");
 } else {
     alert("Miss");
 }
 
 let number = prompt("Enter a random number");
-let message = (number > 90 && number < 110) ? "Bingo!": "Miss";
+let message = (number > 90 && number < 110) ? "Bingo!" : "Miss";
 alert(message);
 
 let firstNumber = Number(prompt("Enter first number"));
@@ -185,3 +185,39 @@ if (!Number.isNaN(firstNumber) && !Number.isNaN(secondNumber)) {
     result = "Error: at least one of the entered values is not a number";
 }
 alert(result);
+
+let n = 0;
+while (n < 91) {
+    console.log(n); // -> 0, 10, 20, 30, 40, 50, 60, 70, 80, 90
+    n += 10;
+}
+
+let isOver = false;
+let counter = 1;
+while (isOver != true) {
+    let continueLoop = confirm(`[${counter}] Continue the loop?`);
+    isOver = continueLoop === true ? false : true;
+    counter = counter + 1;
+}
+
+let condition = false;
+while (condition) {
+    console.log("A while loop iteration."); // never executed
+}
+do {
+    console.log("A do ... while loop iteration."); // executed once
+} while (condition);
+
+let names = [];
+let isOver = false;
+while (!isOver) {
+    let name = prompt("Enter another name or press cancel.");
+    if (name != null) {
+        names.push(name);
+    } else {
+        isOver = true;
+    }
+}
+for (let i = 0; i < names.length; i++) {
+    console.log(names[i]);
+}
