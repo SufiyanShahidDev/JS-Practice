@@ -156,3 +156,10 @@ console.log(books[2].title);
 
 let sum = books[0].pages + books[1].pages + books[2].pages;
 console.log(`pages: ${sum}`);
+
+let number = prompt("Enter a random number");
+if(number > 90 && number < 110) {
+    alert("Bingo!");
+} else {
+    alert("Miss");
+}
