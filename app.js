@@ -366,3 +366,81 @@ console.log(`mean: ${getMeanTemp(day1)}`); // -> mean:
 let day2 = [17, 16, 14, 12, 10, 10, 10, 11, 13, 14, 15, 17, 22, 27, 29, 29, 27, 26, 24, 21, 19, 18, 17, 16];
 console.log(`mean: ${getMeanTemp(day2)}`); // -> mean:
 18.083333333333332
+
+
+let inner = function () {
+    console.log('inner 1');
+}
+let outer = function (callback) {
+    console.log('outer 1');
+    let timerId = setInterval(callback, 1000) /*ms*/;
+    console.log('outer 2');
+    setTimeout(function () {
+        clearInterval(timerId);
+    }, 5500);
+}
+console.log('test 1');
+outer(inner);
+console.log('test 2');
+
+function add(a, b) {
+    if (!Number.isInteger(a) || !Number.isInteger(b)) {
+        return NaN;
+    }
+    return a + b;
+}
+
+function sub(a, b) {
+    if (!Number.isInteger(a) || !Number.isInteger(b)) {
+        return NaN;
+    }
+    return a - b;
+}
+
+function mult(a, b) {
+    if (!Number.isInteger(a) || !Number.isInteger(b)) {
+        return NaN;
+    }
+    return a * b;
+}
+
+let contacts = [{
+    name: "Maxwell Wright",
+    phone: "(0191) 719 6495",
+    email: "Curabitur.egestas.nunc@nonummyac.co.uk"
+}, {
+    name: "Raja Villarreal",
+    phone: "0866 398 2895",
+    email: "posuere.vulputate@sed.com"
+}, {
+    name: "Helen Richards",
+    phone: "0800 1111",
+    email: "libero@convallis.edu"
+}];
+let showContact = function (contacts, i) {
+    if (contacts instanceof Array && contacts[i]) {
+        console.log(`${contacts[i].name} / ${contacts[i].phone} / ${contacts[i].email}`);
+    }
+}
+
+let showAllContacts = function (contacts) {
+    if (contacts instanceof Array) {
+        for (contact of contacts) {
+            console.log(`${contact.name} / ${contact.phone} / ${contact.email}`);
+        }
+    }
+}
+
+let addNewContact = function (contacts, name, phone, email) {
+    if (contacts instanceof Array && name && phone && email) {
+        contacts.push({
+            name: name,
+            phone: phone,
+            email: email
+        });
+    }
+}
+
+console.log(showContact)
+console.log(showAllContacts)
+console.log(addNewContact)
