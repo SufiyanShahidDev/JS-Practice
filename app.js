@@ -444,3 +444,41 @@ let addNewContact = function (contacts, name, phone, email) {
 console.log(showContact)
 console.log(showAllContacts)
 console.log(addNewContact)
+
+let sX = prompt("Enter the first number");
+let sY = prompt("Enter the second number");
+let x = Number(sX);
+let y = Number(sY);
+if (Number.isFinite(x) && Number.isFinite(y) && y !== 0) {
+    console.log(x / y);
+} else {
+    console.log("incorrect arguments");
+}
+
+
+let a = -2;
+try {
+    a = b;
+} catch (error) {
+    if (error instanceof ReferenceError) {
+        console.log("Reference error, reset a to -2"); // -> Reference error, reset a to -2
+        a = -2;
+    } else {
+        console.log("Other error - " + error);
+    }
+}
+console.log(a); // -> -2
+
+
+let a = 10;
+try {
+    a = b; // First ReferenceError
+} catch (error) {
+    try {
+        console.log(b); // Second ReferenceError
+    } catch {
+        console.log("Second catch!"); // -> Second catch!
+    }
+} finally {
+    console.log("Finally!"); // -> Finally!
+}
