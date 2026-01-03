@@ -28,3 +28,9 @@
 
 // clearInterval(id)
 
+
+function abc(){
+    // alert("ok");
+    window.close();
+
+}
