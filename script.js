@@ -19,11 +19,12 @@
 
 // }, 3000);
 
-let id = window.setInterval(function () {
-    // window.location.href = "https://github.com/"
-    window.open("https://github.com/","_blank")
+// let id = window.setInterval(function () {
+//     // window.location.href = "https://github.com/"
+//     window.open("https://github.com/","_blank")
 
 
-}, 5000);
+// }, 5000);
 
-clearInterval(id)
+// clearInterval(id)
+
