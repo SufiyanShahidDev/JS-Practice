@@ -1,23 +1,23 @@
 
-let a = window;
+// let a = window;
 
-console.log(a);
+// console.log(a);
 
-let b = window.location;
+// let b = window.location;
 
-console.log(b);
+// console.log(b);
 
-window.setTimeout(function () {
-    window.location.href = "https://github.com/"
-}, 4000);
-
-
-window.setTimeout(function () {
-    // window.location.href = "https://github.com/"
-    window.open("https://github.com/","_blank")
+// window.setTimeout(function () {
+//     window.location.href = "https://github.com/"
+// }, 4000);
 
 
-}, 3000);
+// window.setTimeout(function () {
+//     // window.location.href = "https://github.com/"
+//     window.open("https://github.com/","_blank")
+
+
+// }, 3000);
 
 let id = window.setInterval(function () {
     // window.location.href = "https://github.com/"
