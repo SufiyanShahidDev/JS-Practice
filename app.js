@@ -538,3 +538,7 @@ function expandLoris() {
 function makeBig() {
     document.getElementById("p1").className += " big";
 }
+
+// function makeBig() {
+//     document.getElementById("p1").style.fontSize = "2em";
+// }
