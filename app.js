@@ -511,6 +511,6 @@ for (counter = 0; counter < maxValue; counter++) {
 console.log("Final result: ", result);
 
 
-// function fillCity() {
-//     var cityName;
-//     var zipEntered = document.getElementById("zip").value;
+function fillCity() {
+    var cityName;
+    var zipEntered = document.getElementById("zip").value;
