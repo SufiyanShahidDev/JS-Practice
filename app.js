@@ -521,11 +521,11 @@ function fillCity() {
         case "68114":
             cityName = "Omaha";
             break;
-//         case "53212":
-//             cityName = "Milwaukee";
-//     }
+        case "53212":
+            cityName = "Milwaukee";
+    }
 
-//     document.getElementById("city").value = cityName;
+    document.getElementById("city").value = cityName;
 
-// }
+}
 
