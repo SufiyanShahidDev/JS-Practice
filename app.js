@@ -514,7 +514,7 @@ console.log("Final result: ", result);
 function fillCity() {
     var cityName;
     var zipEntered = document.getElementById("zip").value;
-    // switch (zipEntered) {
-    //     case "60608":
-    //         cityName = "Chicago";
-    //         break;
+    switch (zipEntered) {
+        case "60608":
+            cityName = "Chicago";
+            break;
