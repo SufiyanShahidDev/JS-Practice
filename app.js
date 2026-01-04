@@ -535,6 +535,6 @@ function expandLoris() {
     document.getElementById("slowLoris").innerHTML = expandedParagraph;
 }
 
-// function makeBig() {
-//     document.getElementById("p1").className += " big";
-// }
+function makeBig() {
+    document.getElementById("p1").className += " big";
+}
