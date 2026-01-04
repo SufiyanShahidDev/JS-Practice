@@ -546,3 +546,9 @@ function makeBig() {
 var par = document.getElementsByTagName("p");
 
 var textInMiddleParagraph = par[1].innerHTML;
+
+// par[1].innerHTML = "This SUV is too big.";
+
+// for (var i = 0; i < par.length; i++) {
+//     par[i].style.fontFamily = "Verdana, Geneva, sans-serif";
+// }
