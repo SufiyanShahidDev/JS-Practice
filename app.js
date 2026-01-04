@@ -543,6 +543,6 @@ function makeBig() {
     document.getElementById("p1").style.fontSize = "2em";
 }
 
-// var par = document.getElementsByTagName("p");
+var par = document.getElementsByTagName("p");
 
-// var textInMiddleParagraph = par[1].innerHTML;
+var textInMiddleParagraph = par[1].innerHTML;
