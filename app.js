@@ -556,3 +556,8 @@
 // let childrens = document.childNodes[1].childNodes[2].childNodes[1];
 
 // console.log(childrens);
+
+// function practice() {
+//     document.getElementById("prep").style.backgroundColor = "darkcyan"
+//     document.getElementById("prep").style.color = "white"
+// };
