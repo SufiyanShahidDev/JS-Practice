@@ -557,7 +557,7 @@
 
 // console.log(childrens);
 
-// function practice() {
-//     document.getElementById("prep").style.backgroundColor = "darkcyan"
-//     document.getElementById("prep").style.color = "white"
-// };
+function practice() {
+    document.getElementById("prep").style.backgroundColor = "darkcyan"
+    document.getElementById("prep").style.color = "white"
+};
