@@ -36,7 +36,7 @@
 // }
 
 function showDateTime() {
-    let now = new Date()
+    let now = new Date();
     console.log(now);
 
     let days = [
@@ -49,7 +49,7 @@ function showDateTime() {
         "Sat"
     ];
 
-    let dayName = days[now.getDay()]
+    let dayName = days[now.getDay()];
     console.log(dayName);
 
 
@@ -68,10 +68,10 @@ function showDateTime() {
         "Dec"
     ];
 
-    let monName = months[now.getMonth()]
+    let monName = months[now.getMonth()];
     console.log(monName);
     
 
-}
+};
 
-showDateTime()
+showDateTime();
