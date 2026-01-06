@@ -74,6 +74,7 @@ function showDateTime() {
     let currentDate = now.getDate()
     let currentYear = now.getFullYear()
 
+    // document.getElementById("date").innerHTML = `${currentDate} ${monName}, ${dayName} ${currentYear}`  ;
     
 
 };
