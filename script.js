@@ -77,6 +77,14 @@ function showDateTime() {
     document.getElementById("date").innerHTML = `${currentDate} ${monName}, ${dayName} ${currentYear}`;
 
 
+    let hours = now.getHours()
+    let min = now.getMinutes()
+    let sec = now.getSeconds()
+
+    document.getElementById("time").innerHTML = `${hours}:${min}:${sec}`
+
 };
 
 showDateTime();
+
+setInterval(showDateTime, 1000)
