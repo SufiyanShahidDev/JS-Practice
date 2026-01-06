@@ -37,7 +37,7 @@
 
 function showDateTime() {
     let now = new Date();
-    console.log(now);
+    // console.log(now);
 
     let days = [
         "Sun",
@@ -50,7 +50,7 @@ function showDateTime() {
     ];
 
     let dayName = days[now.getDay()];
-    console.log(dayName);
+    // console.log(dayName);
 
 
     let months = [
@@ -69,7 +69,7 @@ function showDateTime() {
     ];
 
     let monName = months[now.getMonth()];
-    console.log(monName);
+    // console.log(monName);
 
     let currentDate = now.getDate();
     let currentYear = now.getFullYear();
