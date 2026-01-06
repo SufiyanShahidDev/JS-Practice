@@ -71,8 +71,8 @@ function showDateTime() {
     let monName = months[now.getMonth()];
     console.log(monName);
 
-    // let currentDate = now.getDate()
-    // let currentYear = now.getFullYear()
+    let currentDate = now.getDate()
+    let currentYear = now.getFullYear()
 
     
 
