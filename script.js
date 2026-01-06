@@ -52,7 +52,6 @@ function showDateTime() {
     let dayName = days[now.getDay()];
     // console.log(dayName);
 
-
     let months = [
         "Jan",
         "Feb",
@@ -76,7 +75,6 @@ function showDateTime() {
 
     document.getElementById("date").innerHTML = `${currentDate} ${monName}, ${dayName} ${currentYear}`;
 
-
     // let hours = now.getHours();
 
     hours = now.getHours() % 12;
@@ -89,4 +87,4 @@ function showDateTime() {
 
 showDateTime();
 
-setInterval(showDateTime, 1000)
+setInterval(showDateTime, 1000);
