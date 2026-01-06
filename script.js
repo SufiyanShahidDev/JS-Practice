@@ -77,12 +77,13 @@ function showDateTime() {
     document.getElementById("date").innerHTML = `${currentDate} ${monName}, ${dayName} ${currentYear}`;
 
 
-    // let hours = now.getHours()
-    hours = now.getHours() % 12
-    let min = now.getMinutes()
-    let sec = now.getSeconds()
+    // let hours = now.getHours();
 
-    document.getElementById("time").innerHTML = `${hours}:${min}:${sec}`
+    hours = now.getHours() % 12;
+    let min = now.getMinutes();
+    let sec = now.getSeconds();
+
+    document.getElementById("time").innerHTML = `${hours}:${min}:${sec}`;
 
 };
 
