@@ -35,48 +35,48 @@
 
 // }
 
-// function showDateTime() {
-//     let now = new Date();
-//     console.log(now);
+function showDateTime() {
+    let now = new Date();
+    console.log(now);
 
-//     let days = [
-//         "Sun",
-//         "Mon",
-//         "Tues",
-//         "Wed",
-//         "Thur",
-//         "Fri",
-//         "Sat"
-//     ];
+    let days = [
+        "Sun",
+        "Mon",
+        "Tues",
+        "Wed",
+        "Thur",
+        "Fri",
+        "Sat"
+    ];
 
-//     let dayName = days[now.getDay()];
-//     console.log(dayName);
-
-
-//     let months = [
-//         "Jan",
-//         "Feb",
-//         "Mar",
-//         "Apr",
-//         "May",
-//         "June",
-//         "July",
-//         "Aug",
-//         "Sep",
-//         "Oct",
-//         "Nov",
-//         "Dec"
-//     ];
-
-//     let monName = months[now.getMonth()];
-//     console.log(monName);
-
-//     let currentDate = now.getDate();
-//     let currentYear = now.getFullYear();
-
-//     document.getElementById("date").innerHTML = `${currentDate} ${monName}, ${dayName} ${currentYear}`;
+    let dayName = days[now.getDay()];
+    console.log(dayName);
 
 
-// };
+    let months = [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "June",
+        "July",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec"
+    ];
 
-// showDateTime();
+    let monName = months[now.getMonth()];
+    console.log(monName);
+
+    let currentDate = now.getDate();
+    let currentYear = now.getFullYear();
+
+    document.getElementById("date").innerHTML = `${currentDate} ${monName}, ${dayName} ${currentYear}`;
+
+
+};
+
+showDateTime();
