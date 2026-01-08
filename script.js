@@ -1,90 +1,57 @@
 
-// let a = window;
+// function showDateTime() {
+//     let now = new Date();
 
-// console.log(a);
+//     let days = [
+//         "Sun",
+//         "Mon",
+//         "Tues",
+//         "Wed",
+//         "Thur",
+//         "Fri",
+//         "Sat"
+//     ];
 
-// let b = window.location;
+//     let dayName = days[now.getDay()];
 
-// console.log(b);
+//     let months = [
+//         "Jan",
+//         "Feb",
+//         "Mar",
+//         "Apr",
+//         "May",
+//         "June",
+//         "July",
+//         "Aug",
+//         "Sep",
+//         "Oct",
+//         "Nov",
+//         "Dec"
+//     ];
 
-// window.setTimeout(function () {
-//     window.location.href = "https://github.com/"
-// }, 4000);
+//     monName = months[now.getMonth()];
 
+//     currentDate = now.getDate();
+//     currentYear = now.getFullYear();
 
-// window.setTimeout(function () {
-//     // window.location.href = "https://github.com/"
-//     window.open("https://github.com/","_blank")
+//     document.getElementById("date").innerHTML = `${currentDate} ${monName}, ${dayName} ${currentYear}`;
 
+//     let timeAm = "AM";
+//     let timePm = "PM";
+//     let hour = now.getHours();
+//     let hours = now.getHours() % 12;
+//     let min = now.getMinutes();
+//     let sec = now.getSeconds()
 
-// }, 3000);
+//     document.getElementById("time").innerHTML = `${hours}:${min}:${sec}`
 
-// let id = window.setInterval(function () {
-//     // window.location.href = "https://github.com/"
-//     window.open("https://github.com/","_blank")
-
-
-// }, 5000);
-
-// clearInterval(id)
-
-
-// function abc(){
-//     // alert("ok");
-//     window.close();
-
+//     if(hour >= 12) {
+//     document.getElementById("time").innerHTML = `${hours}:${min}:${sec} ${timePm}`
+//     }else{
+//     document.getElementById("time").innerHTML = `${hours}:${min}:${sec} ${timeAm}`
+//     }
 // }
 
-function showDateTime() {
-    let now = new Date();
-    // console.log(now);
+// showDateTime()
 
-    let days = [
-        "Sun",
-        "Mon",
-        "Tues",
-        "Wed",
-        "Thur",
-        "Fri",
-        "Sat"
-    ];
-
-    let dayName = days[now.getDay()];
-    // console.log(dayName);
-
-    let months = [
-        "Jan",
-        "Feb",
-        "Mar",
-        "Apr",
-        "May",
-        "June",
-        "July",
-        "Aug",
-        "Sep",
-        "Oct",
-        "Nov",
-        "Dec"
-    ];
-
-    let monName = months[now.getMonth()];
-    // console.log(monName);
-
-    let currentDate = now.getDate();
-    let currentYear = now.getFullYear();
-
-    document.getElementById("date").innerHTML = `${currentDate} ${monName}, ${dayName} ${currentYear}`;
-
-    // let hours = now.getHours();
-
-    hours = now.getHours() % 12;
-    let min = now.getMinutes();
-    let sec = now.getSeconds();
-
-    document.getElementById("time").innerHTML = `${hours}:${min}:${sec}`;
-
-};
-
-showDateTime();
-
-setInterval(showDateTime, 1000);
+// setInterval(showDateTime, 1000)
