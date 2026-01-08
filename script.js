@@ -43,7 +43,6 @@ function showDateTime() {
     let min = now.getMinutes();
     let sec = now.getSeconds();
 
-    // document.getElementById("time").innerHTML = `${hours}:${min}:${sec}`;
 
     if (hour >= 12) {
         document.getElementById("time").innerHTML = `${hours}:${min}:${sec} ${timePm}`;
