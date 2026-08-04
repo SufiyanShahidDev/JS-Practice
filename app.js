@@ -1,4 +1,5 @@
 
+<<<<<<< HEAD
 
 // // there are many possible and correct variable names
 // let rosePrice = 8;
@@ -561,3 +562,22 @@
     document.getElementById("prep").style.backgroundColor = "darkcyan"
     document.getElementById("prep").style.color = "white"
 };*/
+=======
+function fillCity() {
+    var cityName;
+    var zipEntered = document.getElementById("zip").value;
+    switch (zipEntered) {
+        case "60608":
+            cityName = "Chicago";
+            break;
+        case "68114":
+            cityName = "Omaha";
+            break;
+        case "53212":
+            cityName = "Milwaukee";
+    }
+
+    document.getElementById("city").value = cityName;
+
+}
+>>>>>>> c4c3ce2 (first commit)
