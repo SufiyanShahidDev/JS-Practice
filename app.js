@@ -42,12 +42,14 @@ const users = [
 
 // let [fruit1, fruit2, ...others] = fruits
 
+
 // console.log(fruit1);
 // console.log(fruit2);
 // console.log(others);
 
 
 // let [user1, user2 , ...others] = users
+
 
 
 // console.log(user1);
