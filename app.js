@@ -51,7 +51,6 @@ const users = [
 // let [user1, user2 , ...others] = users
 
 
-
 // console.log(user1);
 // console.log(user2);
 // console.log(others);
